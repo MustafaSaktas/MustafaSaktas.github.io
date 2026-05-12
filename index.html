@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astro Saktaş Web Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#anasayfa" class="logo">Astro Saktaş</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü Aç/Kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#egitim">Eğitim</a></li>
+        <li><a href="#calismalar">Çalışmalar</a></li>
+        <li><a href="#deneyimler">Deneyimler</a></li>
+        <li><a href="#yetkinlikler">Yetkinlikler</a></li>
+        <li><a href="#hedefler">Hedefler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="anasayfa" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Kişisel Blog & Portfolyo</p>
+          <h1>Merhaba, ben <span>Mustafa Saktaş</span>.</h1>
+          <p class="hero-text">
+            Bu blogda eğitim hayatımı, çalışmalarımı, deneyimlerimi ve geleceğe yönelik hedeflerimi paylaşıyorum.
+          </p>
+          <div class="hero-actions"> 
+            <a href="assets\files\CV_Mustafa_Saktaş.pdf" class="btn primary" download>Özgeçmişimi İndir</a>
+            <a href="#iletisim" class="btn secondary">İletişime Geç</a>
+          </div>
+        </div>
+
+        <div class="profile-card reveal">
+          <img src="assets/img/Saktas1.jpeg" alt="Profil Fotoğrafı" class="profile-img" />
+          <div class="profile-info">
+            <h2>Mustafa Saktaş</h2>
+            <p>Bilgisayar Mühendisliği Öğrencisi / Yazılım Geliştirici</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="section">
+      <div class="container narrow reveal">
+        <p class="section-label">Hakkımda</p>
+        <h2>Ben Kimim?</h2>
+        <p>
+          Meraklı, öğrenmeye açık ve üretmeyi seven biriyim. Astronomi, fizik, teknoloji, yazılım, tasarım ve kişisel gelişim gibi alanlara ilgi duyuyor; yeni fikirler keşfetmeyi, öğrendiklerimi pratiğe dökmeyi ve kendimi sürekli geliştirmeyi seviyorum.
+        </p>
+        <p> 
+          Hayata sadece izleyen biri olarak değil, üreten, deneyen ve sorgulayan biri olarak bakıyorum. Bazen çılgın fikirlerin en güzel başlangıçlar olduğuna inanıyor; hayal gücümü bilgiyle, merakımı üretimle birleştirmeye çalışıyorum. Amacım, hem kendimi geliştirmek hem de ortaya değerli, yaratıcı ve ilham verici işler koymak.
+        </p>
+      </div>
+    </section>
+
+    <section id="egitim" class="section alt-bg">
+      <div class="container reveal">
+        <p class="section-label">Eğitim</p>
+        <h2>Eğitim Hayatım</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>2023 - Devam Ediyor</span>
+            <h3>Bilgisayar Mühendisliği / Karabük Üniversitesi</h3>
+            <p>Alanımla ilgili temel bilgileri öğreniyor, projeler geliştirerek kendimi güçlendiriyorum.</p>
+          </article>
+          <article class="timeline-item">
+            <span>2018 - 2022</span>
+            <h3>Konya Ereğli Fen Lisesi</h3>
+            <p>Akademik ve sosyal yönden kendimi geliştirdiğim önemli bir eğitim süreci geçirdim.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calismalar" class="section">
+      <div class="container reveal">
+        <p class="section-label">Çalışmalar</p>
+        <h2>Çalışmalarım</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>TEKNOFEST Çelikkubbe Hava Savunma Sistemi Yarışması</h3>
+            <p>PARTECH Hava Savunma Sistemleri takımı olarak ortak yürüttüğümüz çalışmalarda:
+Gömülü Yazılım tarafında; Lazer Ateşlemesi ve Motor Kontrol algoritmalarının tasarımında ve çalışmasında,
+Görüntü İşleme tarafında; Model Eğitimi ve Dataset oluşturma ve kullanma,
+Elektronik ve Donanım tarafında; Lazer, Motor, Kamera ve diğer sistem elemanlarının kompakt bir şekilde çalışması için tasarım ve donanım alanlarında çalışmalar yürüttüm.</p>
+          </article>
+          <article class="card">
+            <h3>Web Tabanlı E-ticaret Sitesi</h3>
+            <p>HTML, CSS, JavaScript, PHP, Oracle APEX ve SQL veritabanı gibi teknolojileri kullanarak kullanıcı dostu arayüze sahip bir e-ticaret web sitesi geliştirdik. Projede ürün listeleme, kullanıcı etkileşimi, veritabanı yönetimi ve dinamik içerik gösterimi gibi temel e-ticaret işlevleri tasarladık ve uygulandık. </p>
+          </article>
+          <article class="card">
+            <h3>Monad Blitz - Web3 Tabanlı Uygulama</h3>
+            <p>Monad Blitz İstanbul hackathonu kapsamında geliştirilen bu projede, React/TypeScript tabanlı frontend, Hardhat altyapısı ve Solidity akıllı sözleşmeleri kullanılarak Web3 odaklı bir uygulama geliştirildi. Proje kapsamında frontend, backend ve akıllı sözleşme yapıları birlikte ele alınarak merkeziyetsiz uygulama geliştirme, blockchain entegrasyonu ve takım çalışması konularında deneyim kazandım.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="deneyimler" class="section alt-bg">
+      <div class="container reveal">
+        <p class="section-label">Deneyimler</p>
+        <h2>Deneyimlerim</h2>
+        <div class="experience-list">
+          <article>
+            <h3>PARTECH HSS Takım Kaptanlığı</h3>
+            <p>Takım kaptanı olarak ekip üyeleri arasındaki iletişimi koordine ettim, görev dağılımını planladım ve proje sürecinin düzenli ilerlemesini sağladım. Ekip içi motivasyonu artırarak iş birliğini güçlendirdim ve karşılaşılan sorunların çözümünde aktif rol aldım. Bu süreçte liderlik, zaman yönetimi, sorumluluk alma ve etkili iletişim becerilerimi geliştirdim.</p>
+          </article>
+          <article>
+            <h3>IEEE Computer Society Kulüp Üyesi</h3>
+            <p>IEEE Computer Society bünyesinde gönüllü olarak sosyal sorumluluk projelerinde görev aldım. Bu süreçte ekip çalışmasına katkı sağladım, farklı bakış açıları kazanarak iletişim ve iş birliği becerilerimi geliştirdim. Aynı zamanda çeşitli etkinlik ve projeler aracılığıyla profesyonel çevremi genişletme fırsatı buldum.</p>
+          </article>
+          <article>
+            <h3>Bilişim Teknolojileri ve Yazılım Kulübü Üyesi</h3>
+            <p>Bilişim Teknolojileri ve Yazılım Kulübü bünyesinde çeşitli etkinlik ve çalışmalarda aktif olarak yer aldım. Ayrıca yazılım ve teknoloji alanındaki gelişmeleri yakından takip ederek kendimi mesleki açıdan geliştirme fırsatı buldum.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="yetkinlikler" class="section skills-section">
+      <div class="container reveal">
+        <p class="section-label">Yetkinlikler</p>
+        <h2>Yetkinlikler</h2>
+      
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Yazılım Dilleri</h3>
+          
+            <div class="skill-list">
+              <span>C</span>
+              <span>Java</span>
+              <span>PHP</span>
+              <span>SQL</span>
+            </div>
+          </article>
+        
+          <article class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Web Geliştirme</h3>
+          
+            <div class="skill-list">
+              <span>HTML5 & CSS3</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+            </div>
+          </article>
+        
+          <article class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>Donanım & Sistem</h3>
+          
+            <div class="skill-list">
+              <span>STM32 (ARM Cortex)</span>
+              <span>UART / SPI / I2C</span>
+              <span>Embedded C</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hedefler" class="section alt-bg">
+      <div class="container narrow reveal">
+        <p class="section-label">Hedefler</p>
+        <h2>Gelecek Hedeflerim</h2>
+        <p>
+          Alanımda uzmanlaşmak, daha fazla proje üretmek ve öğrendiklerimi paylaşarak insanlığa faydalı bir İnsan olmak istiyorum. Uzun vadede güçlü bir kariyer inşa etmeyi hedefliyorum.
+        </p>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section contact-section">
+      <div class="container contact-grid reveal">
+        <div>
+          <p class="section-label">İletişim</p>
+          <h2>Benimle İletişime Geç</h2>
+          <p>Görüş, öneri veya iş birliği için aşağıdaki formu kullanabilirsiniz.</p>
+          <ul class="contact-info">
+            <li>E-posta: <a href="mailto:msaktas42@hotmail.com">msaktas42@hotmail.com</a></li>
+            <li>Konum: Türkiye</li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/msaktas" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com/MustafaSaktas" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            Ad Soyad
+            <input type="text" name="name" placeholder="Adınız Soyadınız" required />
+          </label>
+          <label>
+            E-posta
+            <input type="email" name="email" placeholder="E-posta adresiniz" required />
+          </label>
+          <label>
+            Mesaj
+            <textarea name="message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">Mesaj Gönder</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mustafa Saktaş. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
